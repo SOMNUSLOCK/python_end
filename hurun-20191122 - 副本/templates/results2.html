@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>“不同行业赞助综艺节目的探究报告”可视化数据产品PRD</title>
+</head>
+<body style="
+	background-color: powderblue;
+	margin-top:       2%;
+    margin-bottom:    5%;
+  	margin-left:      5%;
+  	margin-right:     5%;
+  	padding:          10px 10px 10px 10px;">
+<!--排行榜按钮-->
+  	<form action="/rank"  method="get">
+			<button type="button" onclick="window.open('/rank')" style="border-radius: 3px">排行榜</button>
+	</form>
+  	
+	<head>
+		<div style="margin:0 auto;background-color: firebrick;width: 900px;height: 65px;border-radius: 30px;box-shadow: 3px 3px 2px 2px grey;">
+			<h1 style="text-align: center;color: ghostwhite;padding-top: 10px;">综艺节目的金主爸爸们到底都是谁？</h1>
+		</div>
+	</head>
+	<p style="float: right;">—— “不同行业赞助综艺节目的探究报告”交互可视化数据产品</p>
+	<div style="float:left;background-color:white; margin: 30px auto;box-shadow: 2px 2px 2px 2px lightsteelblue;border-radius:8px;padding-top: 5px;">
+		<h3 style="text-align: center;">引言</h3>
+		<p style="margin: 20px auto;width: 95%;">从真人秀的全民追捧到恋爱观察的崛起，不同时代下观众的需求总是在引导着综艺主题变化，新鲜感的快速消耗是热门综艺的棘手难题之一，另一个则是资金。放眼整个利益趋同的综艺市场，从凉茶、乳制品，到蓝绿大厂（oppo&vivo）的手机轰炸，后又是众多互联网移动APP纷纷下场，再到现今攻势迅猛的微商，各大商家都跃跃欲试希望借赞助之名将自身品牌信息植入综艺节目之中，最大化提升品牌知名度。国产综艺的市场一直在变，其金主也是。</p>
+		<h3 style="text-align: center;">探究目的</h3>
+		<p style="margin: 20px auto;width: 95%;">对于金主爸爸来说，在综艺里植入广告，不会像电影电视剧那么生硬，从而获得更好的广告到达率和转换率。因此我们想探究哪些行业更加乐意投资综艺节目，又有哪些节目类型一直受金主爸爸们的热爱。那么这些金主爸爸们的投资意愿和当下社会经济发展是否相一致？接下来，我们将通过剖析2019年下半年的热门综艺节目及其品牌赞助状况，多方面来解读。</p>
+
+		
+	</div>
+	
+<!--第1个图-->
+	<head><h3 style="text-align: center;padding-top: 30px;margin-top: 20px;">一、2019年下半年各行业赞助（地方卫视）时长总计</h3></head>
+	<div style="float:left;background-color:white; margin: 30px auto;width:65%;box-shadow: 2px 2px 2px 2px lightsteelblue;border-radius:8px;padding-top: 5px;">
+		{{ the_brand|safe }}
+		
+	</div>
+	
+	<head><h1 style="text-align: center;padding-top: 170px;color: ghostwhite;">饮料业赞助节目时长最长</h1></head>
+	<head><h1 style="text-align: center;padding-top: 0px;padding-bottom:190px;color: ghostwhite;">药品、食品热忱相对较高</h1></head>
+	<p style="margin-top: 10px;"><b>数据分析：</b>根据2019年下半年各资助行业总计可看出，饮料、食品和药品成为了投资行业的三大巨头，占比超过50%。<br />
+
+<b>数据故事：</b>这三大巨头属于日常生活中“吃吃喝喝”的必须消费行业，是人们生存必不可少的。其不受年龄、性别、文化、社会阶层的影响（比如说化妆品更受女性青睐，烟酒行业面向更多的是男性市场）。因此在A股所有行业中，长期收益最高的两大行业便是食品和医药。相对于价格偏高的电子产品、轻奢时尚品，广大消费者更加乐于消费十几块钱便能满足的。毕竟顾客就是上帝，金主爸爸们当然要投其所好啊！</p>
+<!--第2个图-->
+	<head><h3 style="text-align: center;padding-top: 20px;">二、2019年下半年各行业赞助情况一览（按月份划分）</h3></head>
+	
+<!--按钮	
+		<form action="/"  method="post">
+			<button type="button" onclick="window.open('/bar')"/>六月</button>
+			<input type="radio" name="sex" value="七月" />七月
+			<input type="submit" value="do"/>
+		</form>
+	<div style="float:left;background-color:white; margin: 30px auto;width:60%;box-shadow: 2px 2px 2px 2px lightsteelblue;border-radius:8px;padding-top: 5px;">
+		{{ the_month_six|safe }}		
+	</div>
+-->
+<div>
+	<div style="padding-bottom:5px;padding-left:20px;float:left;background-color:white; margin: 30px auto;width:65%;box-shadow: 2px 2px 2px 2px lightsteelblue;border-radius:8px;padding-top: 5px;">
+		{{ the_month_six|safe }}
+	</div>
+	<div style="width: 30%;float: right;">
+	<head><h3 style="text-align: center;padding-top: 30px;color: ghostwhite;">从月份来看：饮料与食品升降互补</h3></head>
+	<p style="padding-right: 50px;">· 6-8月饮料赞助呈上升趋势，夏季饮料市场较为活跃，刚需较大；而食品类在经历7月份大跌后，到11月间一路稳步上升
+<br/>· 9-11月食品赞助攀升，秋冬季人类对食物没有抵抗力，实力证明养嫖过冬</p>
+	
+	<head><h3 style="text-align: center;padding-top: 0px;color: ghostwhite;">从行业来看：行业赞助情况呈“三段式”分布</h3></head>
+	<p style="padding-bottom: 50px;">根据图表各行业数值差异，各赞助行业可以划分为三大梯队。
+<br/>第一梯队：饮料、药品、食品堪称赞助行业第一梯队，从2019年下半年总览来看，这三个行业的赞助时长远高于其余行业，差距明显
+<br/>第二梯队：酒类-衣着，从6-11月下半年总汇数据看，第二梯队行业的差异呈现一定的等级化，且总体与第一梯队形成一倍的差距
+<br/>第三梯队：清洁用品-烟草类，清洁用品、邮电通讯、交通行业以微小差距领先，但与本梯队其他行业间的差距不大
+</p>
+	</div>
+</div>
+
+
+<!--第3个图-->
+
+	<head><h3 style="text-align: center;margin-top: 30px;">三、2019年下半年（6-11月）各地方卫视品牌赞助商数量总计</h3></head>
+	<div style="float:left;background-color:white; margin: 30px auto;width:65%;box-shadow: 2px 2px 2px 2px lightsteelblue;border-radius:8px;padding-top: 5px;padding-right: 10px;">	
+		{{ the_brand_count|safe }}
+	</div>
+<div style="width: 33%;float: right;">
+	<head><h3 style="text-align: center;padding-top: 170px;color: ghostwhite;">A.东部城市及沿海城市品牌赞助商数量普遍多于内陆及西部地区</h3></head>
+	<head><h3 style="text-align: center;padding-top: 0px;padding-bottom:190px;color: ghostwhite;">B.每个省都有分布赞助商</h3></head>
+</div>	
+	
+	<head style="margin-top: 80px;"><p><b>数据故事：这些赞助商分布有何特点？又与什么相关？</b><br />
+（1）与经济发展状况相关<br />
+2019后三季度各省GDP排名前十分别是：广东、江苏、山东、浙江、河南、四川、湖北、湖南、河北、福建省。<br />
+（2）与国家政策扶持相关<br />
+国家政策扶持影视行业行业发展。其原因：a.随着P2P暴、股市一片绿、房地产歌菜、工业、中美贸易战，国内已经没有什么能保持持续性増长的投资渠道，而目文娱产业是国内众多公司重点投入的领域；b.第十九次全国代表大会指出：“文化是一个民族的精神、是一个国家的灵魂。文化兴国运兴，文化强民族强。没有高度的文化自信，没有文化的繁荣兴盛，就没有中华民族伟大复兴。”；c.影视行业是很好的文化输出、意识形态管控的途径。<br />
+（3）国家的全面发展自然不是仅靠东部沿海地区的发展，各个地区都应协同发展、减少贫富差距、东西差距，以达到共同富裕、全面建成小康社会的目标。因此全国各个省都分布赞助商。<br />
+（4）与各个卫视发展活跃程度相关<br />
+目前中国很受欢迎的卫视有湖南卫视、浙江卫视、江苏卫视等。这些卫视有其经典的代表综艺节目（如湖南卫视的《快乐大本营》、浙江卫视的《王牌对王牌》、江苏卫视《非诚勿扰》），紧跟大众的口味，有自己的“招牌”，因此也特别受各大金主爸爸们的热爱。</p></head>
+	
+
+
+</body>
+</html>

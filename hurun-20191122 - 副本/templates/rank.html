@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>饮料、药品、食品TOP10赞助品牌</title>
+</head>
+<body style="
+	background-color: powderblue;
+	margin-top:       2%;
+    margin-bottom:    5%;
+  	margin-left:      5%;
+  	margin-right:     5%;
+  	padding:          10px 10px 10px 10px;">
+	<head>
+		<div style="margin:0 auto;background-color: firebrick;width: 900px;height: 65px;border-radius: 30px;box-shadow: 3px 3px 2px 2px grey;">
+			<h1 style="text-align: center;color: ghostwhite;padding-top: 10px;">TOP10品牌赞助商排行榜</h1>
+		</div>
+	</head>
+<!--1-->
+	<div style="margin:30px auto;background-color: firebrick;width: 150px;height: 40px;border-radius: 20px;box-shadow: 3px 3px 2px 2px grey;">
+		<h3 style="padding-top:6px;text-align: center;color: ghostwhite;">饮料类TOP10</h3>
+	</div>
+	
+	<div style="margin-left:150px;margin-top: 30px;float: center;">
+	{{ the_rank|safe }}		
+	</div>
+
+<!--2-->
+	<div style="margin:30px auto;background-color: firebrick;width: 150px;height: 40px;border-radius: 20px;box-shadow: 3px 3px 2px 2px grey;">
+		<h3 style="padding-top:6px;text-align: center;color: ghostwhite;">药品类TOP10</h3>
+	</div>
+	<div style="margin-left:150px;margin-top: 30px;float: center;">
+	{{ the_drug|safe }}		
+	</div>
+
+<!--3-->
+	<div style="margin:30px auto;background-color: firebrick;width: 150px;height: 40px;border-radius: 20px;box-shadow: 3px 3px 2px 2px grey;">
+		<h3 style="padding-top:6px;text-align: center;color: ghostwhite;">食品类TOP10</h3>
+	</div>
+	<div style="margin-left:150px;margin-top: 30px;float: center;">
+	{{ the_food|safe }}		
+	</div>
+
+<!--4-->
+	<div style="margin:30px auto;background-color: firebrick;width: 150px;height: 40px;border-radius: 20px;box-shadow: 3px 3px 2px 2px grey;">
+		<h3 style="padding-top:6px;text-align: center;color: ghostwhite;">酒类TOP10</h3>
+	</div>
+	<div style="margin-left:150px;margin-top: 30px;float: center;">
+	{{ the_alcohol|safe }}		
+	</div>
+	
+</body>
+</html>
